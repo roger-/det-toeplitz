@@ -7,9 +7,9 @@ This isn't the fastest but it's better than forming the full Toeplitz matrix and
 
 All functions follow the [SciPy `solve_toeplitz()` function](https://docs.scipy.org/doc/scipy/reference/generated/scipy.linalg.solve_toeplitz.html) API and accept either the first column of a symmetric Toeplitz matrix or a tuple of the first column and first row for the non-symmetric case.
 
-* `slogdet_toeplitz()`: sign + log determinant (positive and negative determinants)
-* `log_det_toeplitz()`: log determinant (positive determinants only)
-* `det_toeplitz()`: determinant (may under- or over-flow)
+* `slogdet_toeplitz(c_or_cr)`: sign + log determinant (positive and negative determinants)
+* `log_det_toeplitz(c_or_cr)`: log determinant (positive determinants only)
+* `det_toeplitz(c_or_cr)`: determinant (may under- or over-flow)
 
 Some accommodation is made for complex inputs/outputs but this hasn't been tested much.
 
