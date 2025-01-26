@@ -17,7 +17,7 @@ Some accommodation is made for complex inputs/outputs but this hasn't been teste
 
 You can compute the loglikelihood of a multivariate Gaussian give it's autocovariance (i.e. the first column of the covariance matrix) like this:
 
-```
+```python
 import numpy as np
 from toeplitz import slogdet_toeplitz, log_det_toeplitz
 from scipy.linalg import solve_toeplitz
